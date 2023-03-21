@@ -10,3 +10,24 @@
 
 
 MAUIアプリで使用される一般的な型のほとんどは、Microsoft.Maui.DependenciesとMicrosoft.Maui.Extensionsパッケージにあります。
+
+
+コード内でイベントハンドラを作成するには、+=演算子を使用してイベントを購読します。この操作は、通常、ページのコンストラクタでInitializeComponentを呼び出した後に実行します。
+```C#
+public partial class MainPage : ContentPage, IPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        Counter.Clicked += OnCounterClicked;
+    }
+
+    ...
+
+    private void OnCounterClicked(object sender, EventArgs e)
+    {
+        ...
+    }
+}
+```
+この方法を使うと、同じイベントに対して複数のイベント処理メソッドをサブスクライブすることができます。各イベント処理メソッドはイベントが発生したときに実行されますが、特定の順序で実行されることを想定していないため、それらの間に依存関係を導入しないようにしましょう。
