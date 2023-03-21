@@ -9,5 +9,4 @@
 - MainPage.xaml.csファイルには、このページのアプリケーション・ロジックが含まれています。具体的には、MainPageクラスには、ユーザーがClick meボタンをタップしたときに実行されるOnCounterClickedという名前のメソッドが含まれています。
 
 
-
-https://learn.microsoft.com/ja-jp/training/modules/build-mobile-and-desktop-apps/5-add-controls-to-the-ui
+MAUIアプリで使用される一般的な型のほとんどは、Microsoft.Maui.DependenciesとMicrosoft.Maui.Extensionsパッケージにあります。
