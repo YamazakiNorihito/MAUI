@@ -58,6 +58,9 @@
 	  <MauiXaml Update="NotePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="NotePage2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Page1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

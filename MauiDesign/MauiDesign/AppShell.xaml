@@ -8,7 +8,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:NoteOSPage}"
-        Route="NoteOSPage" />
+        ContentTemplate="{DataTemplate local:NotePage2}"
+        Route="NotePage2" />
 
 </Shell>
